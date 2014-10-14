@@ -1,0 +1,354 @@
+html, body {
+    font:normal 12px verdana;
+    margin:0;
+    padding:0;
+    border:0 none;
+    overflow:hidden;
+    height:100%;
+}
+p {
+    margin:5px;
+}
+img {
+    border:0;
+}
+#loading-mask{
+    background-color:white;
+    height:100%;
+    position:absolute;
+    left:0;
+    top:0;
+    width:100%;
+    z-index:20000;
+}
+#loading{
+    height:auto;
+    position:absolute;
+    left:45%;
+    top:40%;
+    padding:2px;
+    z-index:20001;
+}
+#loading a {
+    color:#225588;
+}
+#loading .loading-indicator{
+    background:white;
+    color:#444;
+    font:bold 13px Helvetica, Arial, sans-serif;
+    height:auto;
+    margin:0;
+    padding:10px;
+}
+#loading-msg {
+    font-size: 10px;
+    font-weight: normal;
+}
+div.search-item {
+	padding: 0px 5px;
+}
+div.center  /* Internet Explorer */ {
+    text-align: center;
+}
+div.center  /* Mozilla Firefox alignment */ {
+    text-align: -moz-center;
+}
+div.measureoutput {
+    color: red;
+    font-weight: bold;
+    font-size:12px;
+    text-align: right;
+}
+div.coordinateoutput {
+    font-weight: bold;
+}
+div.scaleoutput {
+    font-weight: bold;
+}
+span.aerialattribution {
+    color: white;
+}
+a:link.black {
+    text-decoration: underline;
+    color: black;
+}
+a:visited.black {
+    text-decoration: underline;
+    color: black;
+}
+a:link.boldwhite {
+    text-decoration: underline;
+    color: white;
+    font-weight: bold;
+}
+a:visited.boldwhite {
+    text-decoration: underline;
+    color: white;
+    font-weight: bold;
+}
+table.attributes {
+    border-collapse: collapse;
+    text-align: left;
+    width: 100%;
+    font: 11px tahoma,arial,verdana,sans-serif;
+}
+table.attributes a:link {
+    text-decoration: underline;
+    color: black;
+}
+table.attributes a:visited {
+    text-decoration: underline;
+    color: black;
+}
+table.attributes td.field {
+    color: #555555;
+    font-weight: bold;
+    width: 50%;
+    padding:2px;
+}
+table.attributes td.value {
+    width: 50%;
+    padding:2px
+}
+.legend-item {
+    margin: 0.5em 10px;
+}
+.icon-table {
+    background-image: url(../img/table.png) !important;
+}
+.icon-maplayers {
+    background-image: url(../img/layers.png) !important;
+}
+.icon-tools {
+    background-image: url(../img/wrench.png) !important;
+}
+.icon-downloadcenter{
+    background-image: url(../img/database.png) !important;
+}
+.icon-download{
+    background-image: url(../img/database_go.png) !important;
+}
+.icon-about {
+    background-image: url(../img/about.png) !important;
+}
+.icon-help {
+    background-image: url(../img/help.png) !important;
+}
+.icon-login{
+    background-image: url(../img/accept.png) !important;
+}
+.icon-logout {
+    background-image: url(../img/cancel.png) !important;
+}
+.icon-maplegend {
+    background-image: url(../img/layout_content.png) !important;
+}
+.icon-interactivemap {
+    background-image: url(../img/map.png) !important;
+}
+.icon-search {
+    background-image: url(../img/find.png) !important;
+}
+.icon-taxmap {
+    background-image: url(../img/page_white_acrobat.png) !important;
+}
+.icon-admin {
+    background-image: url(../img/user_edit.png) !important;
+}
+.icon-print {
+    background-image: url(../img/printer.png) !important;
+}
+.icon-layerproperties {
+    background-image: url(../img/folder_explore.png) !important;
+}
+.icon-layerextent {
+    background-image: url(../img/magnifier.png) !important;
+}
+.icon-measure-length {
+    background-image: url(../img/ruler.png) !important;
+}
+.icon-measure-area {
+    background-image: url(../img/ruler_square.png) !important;
+}
+.icon-zoomextent {
+    background-image: url(../img/arrow_out.png) !important;
+}
+.x-btn .icon-pan {
+    background-image: url(../img/pan.png);
+}
+.x-btn .icon-identify {
+    background-image: url(../img/information.png);
+}
+.x-btn .icon-clearselect {
+    background-image: url(../img/erase.png);
+}
+.x-btn .icon-zoomin {
+    background-image: url(../img/magnifier_zoom_in.png);
+}
+.x-btn .icon-zoomout {
+    background-image: url(../img/magnifier_zoom_out.png);
+}
+.x-btn .icon-zoomprevious {
+    background-image: url(../img/arrow_left.png);
+}
+.x-btn .icon-zoomnext {
+    background-image: url(../img/arrow_right.png);
+}
+.x-btn .icon-zoomextent {
+    background-image: url(../img/arrow_out.png);
+}
+.x-btn .icon-measure-length {
+    background-image: url(../img/ruler.png);
+}
+.x-btn .icon-measure-area {
+    background-image: url(../img/ruler_square.png);
+}
+.x-btn .icon-dualview {
+    background-image: url(../img/pegman.png);
+}
+.x-btn .icon-fullscreen {
+    background-image: url(../img/fullscreen.gif);
+}
+.x-btn .icon-link {
+    background-image: url(../img/link.png);
+}
+/*div.olControlMousePosition {
+    color: #000000;
+    background: white;
+    margin-bottom: 20px;
+}*/
+div.header{
+    background: url(../img/header-bg.png) repeat-x scroll 0 0 #EDEDED;
+    color: #372416;
+    font-size: 32px;
+    font-family: 'Averia Libre', cursive;
+}
+div.olControlScaleLine {
+    display: block;
+    background: white;
+    position: absolute;
+    right: 2px;
+    left: auto;
+    bottom: 2px;
+    padding: 5px 5px;
+    font-size: xx-small;
+}
+.olImageLoadError {
+	background-color: transparent !important;
+	opacity: 0.5;
+    filter: alpha(opacity=50); /* IE */
+}
+.olControlAttribution {
+	font-size: smaller;
+	left: 2px;
+	bottom: 2px;
+	position: absolute;
+	display: block;
+}
+/*.olTileImage {
+	-webkit-transition: none;
+	-moz-transition: none;
+	-o-transition: all 0 none;
+	transition: none;
+}*/
+/* Pan- and Zoom- Panel Styles*/
+
+.olControlPanPanel div {
+    background-image:url(../resources/ext-3.4.0/resources/images/gray/panel/tool-sprites.gif);
+    height:15px;
+    width:15px;
+    /* workaround for button height in IE */
+    font-size:0px;
+}
+
+.olControlPanPanel .olControlPanNorthItemInactive {
+    background-position:15px -60px;
+    left:16px
+}
+.olControlPanPanel .olControlPanEastItemInactive {
+    background-position:15px -120px;
+    left: 30px;
+    top: 16px;
+}
+.olControlPanPanel .olControlPanSouthItemInactive {
+    background-position:15px -75px;
+    left: 16px;
+    top: 32px;
+}
+.olControlPanPanel .olControlPanWestItemInactive {
+    background-position:15px -105px;
+    left: 2px;
+    top: 16px;
+}
+.olControlZoomPanel {
+    left:21px;
+}
+.olControlZoomPanel div {
+    background-image:url(../resources/ext-3.4.0/resources/images/gray/panel/tool-sprites.gif);
+    height:15px;
+    width:15px;
+    /* workaround for button height in IE */
+    font-size:0px;
+}
+.olControlZoomPanel .olControlZoomInItemInactive {
+    background-position:15px -240px;
+}
+.olControlZoomPanel .olControlZoomToMaxExtentItemInactive {
+    display: none;
+}
+.olControlZoomPanel .olControlZoomOutItemInactive {
+    background-position:15px -255px;
+    top: 123px;
+}
+/* position the zoom slider within map panel */
+.gx-zoomslider {
+    top: 90px;
+    left: 17px
+}
+.olControlLoadingPanel {
+	background-image:url(../img/ajax-loader.gif);
+	position: relative;
+	width: 195px;
+	height: 11px;
+	background-position:center;
+	background-repeat:no-repeat;
+	display: none;
+}
+.x-tree-node .gx-tree-layer-outofrange .x-tree-node-icon {
+    opacity: 0.5;
+}
+.gx-tree-layer-outofrange .x-tree-node-anchor span {
+    color: #777;
+}
+/* Styles used by the default GetFeatureInfo output, added to make IE happy */
+table.featureInfo, table.featureInfo td, table.featureInfo th {
+	border: 1px solid #ddd;
+	border-collapse: collapse;
+	/*margin: 5px;*/
+	font-size: 90%;
+	padding: .4em .4em;
+}
+
+table.featureInfo th {
+	padding: .4em .4em;
+	/*text-transform: uppercase;*/
+	font-weight: bold;
+	background: #eee;
+}
+
+table.featureInfo td {
+	background: #fff;
+}
+
+table.featureInfo tr.odd td {
+	background: #eee;
+}
+
+table.featureInfo caption {
+	white-space:nowrap;
+	text-align: left;
+	font-size: 100%;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: .2em .2em;
+}

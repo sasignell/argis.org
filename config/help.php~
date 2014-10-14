@@ -1,0 +1,78 @@
+<link rel="stylesheet" type="text/css" href="http://www.aprgis.org:8080/geoserver/www/aprgis/theme/app/geoexplorer.css" />
+<p><font size="4"><b>ARGIS Help & Tutorials</b></font></p>
+</br>
+<p><font size="3"><a href="#toolbar">Using the Toolbar</a></br>
+<a href="#basemap">Changing the Background Image(Basemap)</a></br>
+<a href="#toc">Layer Functionality and the Table of Contents</a></br>
+<a href="#download">Downloads and Web Map Services</a></br>
+<a href="#videos">Video Tutorials</a></br></br></font></p>
+<a name="toolbar"><p><font size="3"><b>Toolbar</b></font></p>
+<img src="http://www.aprgis.org:8080/geoserver/www/aprgis/theme/app/img/geosilk/handpan.png"/>
+<b>   Pan:</b> click-hold and move mouse to pan the map.
+</br>
+
+<img src="http://www.aprgis.org:8080/geoserver/www/aprgis/theme/app/img/silk/magnifier_zoom_in.png"/>
+<b>   Zoom in:</b> single click on the map will perfom fixed zoom in, or click-hold and draw a polygon to zoom to a specific area.  
+</br>
+
+<img src="http://www.aprgis.org:8080/geoserver/www/aprgis/theme/app/img/silk/magnifier_zoom_out.png"/>
+<b>  Zoom out:</b> single click on the map will perform fixed zoom out.
+</br>
+
+<img src="http://www.aprgis.org:8080/geoserver/www/aprgis/theme/app/img/silk/arrow_left.png"/> 
+<b>   Previous extent:</b> toggle back to last map extent.
+</br>
+
+<img src="http://www.aprgis.org:8080/geoserver/www/aprgis/theme/app/img/silk/arrow_right.png"/>
+<b>   Next extent:</b> toggle forward to next map extent.
+</br>
+
+<img src="http://www.aprgis.org:8080/geoserver/www/aprgis/theme/app/img/silk/arrow_out.png"/>
+   <b>   Full extent:</b> zoom to full extent of the active layers.
+</br>
+
+<img src="http://www.aprgis.org:8080/geoserver/www/aprgis/theme/app/img/silk/information.png"/>
+   <b>   Information:</b> click on features on the map to get more information, reports and/or links to other datasets or websites.
+</br>
+
+<img src="http://www.aprgis.org:8080/geoserver/www/aprgis/theme/app/img/geosilk/ruler.png"/>
+   <b>   Ruler:</b> click on the map to calculate line distances or polygon areas.
+</br>
+
+<img src="http://www.aprgis.org:8080/geoserver/www/aprgis/theme/app/img/silk/find.png"/>
+   <b>   Subset and Download:</b> open Query Dialogue to filter and/or download data by geographic extent, view attribute tables.
+</br></br>
+
+<a name="basemap"><p><font size="3"><b>Basemap Layers</b></font></p>
+   Use the Basemap tool to change the background imagery:
+</br><img src="img/basemaps.png"/>
+
+</br>
+</br>
+<a name="toc"><p><font size="3"><b>Table of Contents</b></font></p>
+Layers in the table of contents can be toggled on and off.  Click and drag to rearrange the layer order.  Right click on a layer to change the opacity, get more information, or perform a quick data filter (e.g. select a trail use type, land class or fish species.)
+</br><img border=2 src="img/toc.png"/>
+</br>
+<a name="download"></a><p><font size="4"><b>Downloads and Web Map Services</b></font></p>
+There are several ways to bring data from ARGIS to your local computer.  </br>
+1. All layers are available for download in shapefile, kml or kmz format in the "Download Center" tab.</br></br>
+2. If you only need data for a portion of the coverage, click on our <img src="img/subset.png"/> tool to zoom in and extract the data you want.</br></br>
+3. If would like to view the layers in your own mapping application (e.g. ArcGIS, Google Earth or uDig), but do not need/want to dowwnload the raw data, you can use the following URL to add the <p><style color="red"><b>Adirondack Web Map Service</b></style></p> to your application:</br></br><b> http://aprgis.org:8080/geoserver/ows?service=wms&version=1.1.1&request=GetCapabilities&</b>
+</br></br>
+<a name="videos"></a><p><font size="4"><b>Video Tutorials</b></font></p>
+<p>For best viewing, click the YouTube logo on the video to go to their site, then click the "Expand" icon. (Full screen mode is a bit blurry)</p>
+</br><p>Basic layer functionality in ARGIS</p>
+</br>
+<iframe width="425" height="349" src="http://www.youtube.com/embed/8s6IE2XOOl0" frameborder="0" allowfullscreen></iframe>
+
+</br><p>Using the ARGIS toolbar</p>
+</br>
+<iframe width="425" height="349" src="http://www.youtube.com/embed/g-8CwOA0-F4" frameborder="0" allowfullscreen></iframe>
+</br></br>
+</br><p>Downloading and Querying data</p>
+</br>
+<iframe width="425" height="349" src="http://www.youtube.com/embed/iV9EYMqWDv8" frameborder="0" allowfullscreen></iframe>
+</br></br>
+</br><p>Add ARGIS Web Map Service to a GIS application on your local machine (e.g. ArcGIS)</p>
+</br>
+<iframe width="425" height="349" src="http://www.youtube.com/embed/iiqRt6r2tD0" frameborder="0" allowfullscreen></iframe>

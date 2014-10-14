@@ -1,0 +1,39 @@
+<link rel="stylesheet" type="text/css" href="http://www.aprgis.org:8080/geoserver/www/aprgis/theme/app/geoexplorer.css" />
+<p><b><font size="4">About ARGIS</font></b></p>
+</br><p>Welcome to the Adirondack Regional Geographic Information System (ARGIS), a regional spatial data portal built using open-source software and designed to serve data that is authoritative, visualized, interactive and dynamic ("AVID").  ARGIS was created by Steve Signell (SUNY-ESF Adirondack Ecological Center) and Bryan McBride (geoserving.net), and funded by a grant from the New York State Department of Environmental Conservation and contributions from data providers. Current data contributors include:</p>
+	<p><ul class="ulCls">
+		<?php  
+		$user="postgres";
+		$password="gisdb";
+		$database="ADKGIS";
+		$host="localhost";
+
+		// Opens a connection to a mySQL server
+		$connection=pg_connect ("dbname=$database user=$user password=$password host=$host port=$port");
+		if (!$connection) {
+		  die("Not connected : " . pg_error());
+		}
+
+		// Search the rows in the markers table
+		$query = "SELECT DISTINCT metadata.originator FROM metadata";
+
+		$result = pg_exec($connection, $query);
+
+		if (!$result) {printf ("ERROR"); exit;}
+
+		// Iterate through the rows, adding XML nodes for each
+		while ($row = @pg_fetch_assoc($result)){
+		echo "<li>" . $row['originator'] . "</li>";
+		}
+		?>
+	</ul></p>
+	<p><b>For more information on individual datasets, click on the "Download Center" tab in the center panel.</b></p>
+        <br/>
+	<p>To comment on the site, ask a question, or get more information about sharing your data via ARGIS, contact Steve Signell at <a href="mailto:ssignell@esf.edu">ssignell@esf.edu</a></p>
+
+	<br/>
+	<p><b>ARGIS Architecture:</b></p>
+	<p>ARGIS is built on a LINUX server using free, open-source software:</p>
+	<div class="center"><img style="width: 600px; height: 186px;" src="http://www.aprgis.org:8080/geoserver/www/aprgis/theme/app/img/technology.png">
+	</div>
+	</div>

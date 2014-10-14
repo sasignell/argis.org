@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+<title>ARGIS | Trail Register Report</title>
+<link rel="stylesheet" type="text/css" href="http://extjs-public.googlecode.com/svn/tags/extjs-3.2/release/resources/css/ext-all.css" />
+
+ 	<!-- LIBS -->
+ 	<script type="text/javascript" src="http://extjs-public.googlecode.com/svn/tags/extjs-3.2/release/adapter/ext/ext-base.js"></script>
+    <script type="text/javascript" src="http://extjs-public.googlecode.com/svn/tags/extjs-3.2/release/ext-all.js"></script>
+
+    <!-- Common Styles for the examples -->
+    <link rel="stylesheet" type="text/css" href="http://extjs-public.googlecode.com/svn/tags/extjs-3.2/release/examples/shared/examples.css" />
+
+<script type="text/javascript">
+	var urlvar;
+
+	function getUrlVars() {
+	urlvar = {};
+	var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+		urlvar[key] = value;
+	});
+	return urlvar;
+	}
+
+/*!
+ * Ext JS Library 3.2.0
+ * Copyright(c) 2006-2010 Ext JS, Inc.
+ * licensing@extjs.com
+ * http://www.extjs.com/license
+ */
+Ext.chart.Chart.CHART_URL = 'http://extjs-public.googlecode.com/svn/tags/extjs-3.2/release/resources/charts.swf';
+
+Ext.onReady(function(){
+
+	 var monthstore = new Ext.data.XmlStore({
+         url: 'monthlyuse_genxml.php?regid='+urlvar['regid'],
+         record: 'register',
+         fields:[{name:'month', mapping:"@month"},{name:'people', mapping:"@avgpeople", type:'int'}]
+    });
+        monthstore.load();
+
+
+    new Ext.Panel({
+        //title: 'Trail Use By Monthly Average ('+unescape(urlvar['regname'])+')',
+        title: 'Trail Use By Monthly Average',
+		renderTo: 'monthlyreport',
+        width:450,
+        height:300,
+        layout:'fit',
+
+        items: {
+            xtype: 'columnchart',
+            store: monthstore,
+            xField: 'month',
+            yField: 'people',
+			xAxis: new Ext.chart.CategoryAxis({
+                title: 'Month'
+            }),
+            yAxis: new Ext.chart.NumericAxis({
+                title: 'Avg. Visitors'
+            }),
+			extraStyle: {
+               xAxis: {
+                    labelRotation: -90
+                }
+            }
+        }
+    });
+
+		 var yearstore = new Ext.data.XmlStore({
+         url: 'yearlyuse_genxml.php?regid='+urlvar['regid'],
+         record: 'register',
+         fields:[{name:'year', mapping:"@year"},{name:'people', mapping:"@totals", type:'int'}]
+    });
+        yearstore.load();
+
+
+    new Ext.Panel({
+        //title: 'Trail Use By Year ('+unescape(urlvar['regname'])+')',
+        title: 'Trail Use By Year',
+		renderTo: 'yearlyreport',
+        width:450,
+        height:300,
+        layout:'fit',
+
+        items: {
+            xtype: 'columnchart',
+            store: yearstore,
+            xField: 'year',
+            yField: 'people',
+			xAxis: new Ext.chart.CategoryAxis({
+                title: 'Year'
+            }),
+            yAxis: new Ext.chart.NumericAxis({
+                title: 'Total Visitors'
+            }),
+			extraStyle: {
+               xAxis: {
+                    labelRotation: -90
+                }
+            }
+        }
+    });
+
+	document.getElementById('heading').innerHTML = '<span style="font-size:26px; font-weight:normal; color:#15428B;">'+unescape(urlvar['regname'])+'</span>';
+	document.getElementById('monthlydata').innerHTML = '<a href="monthlyuse_genxml.php?regid='+urlvar['regid']+'" target="_blank">Download XML Data</a>'
+	document.getElementById('yearlydata').innerHTML = '<a href="yearlyuse_genxml.php?regid='+urlvar['regid']+'" target="_blank">Download XML Data</a>'
+    });
+</script>
+</head>
+<body onload="getUrlVars();">
+<table style="width: 900px; text-align: left; margin-left: auto; margin-right: auto;" border="0" cellpadding="2" cellspacing="10">
+<tbody>
+<tr align="center"><td colspan="2" rowspan="1" style="text-align: center; vertical-align: middle;"><span style="font-size:26px; font-weight:bold; color:#15428B;">ARGIS Trail Register Report</span><br><div id="heading"></div></td></tr>
+<tr><td style="height: 300px; width: 450px;"><div id="monthlyreport"></div></td>
+<td style="height: 300px; width: 450px;"><div id="yearlyreport"></div></td></tr>
+<tr><td><div id="monthlydata"></div></td><td><div id="yearlydata"></div></td></tr>
+</tbody>
+</table>
+<br></body></html>
