@@ -26,7 +26,7 @@
 	</ul></p>
 	<p><b>For more information on individual datasets, click on the "Download Center" tab in the center panel.</b></p>
         <br/>
-	<p>To comment on the site, ask a question, or get more information about sharing your data via ARGIS, contact Colin Beier at <a href="mailto:cbeier@esf.edu">cbeier@esf.edu</a></p>
+	<p>To comment on the site, ask a question, contact Colin Beier at <a href="mailto:cbeier@esf.edu">cbeier@esf.edu</a></p>
 
 	<br/>
 	<p><b>ARGIS Architecture:</b></p>

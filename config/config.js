@@ -108,7 +108,7 @@ var app = new GeoExplorer({
 				queries: [],
                                 updated: '2011-06-28'
 				},{
-				name: 'ADK:campsiteview',
+				name: 'argis:campsite',
 				title: 'Campsites',
 				originator: 'New York State Department of Environmental Conservation',
                                 format: 'image/png',
@@ -204,7 +204,7 @@ var app = new GeoExplorer({
 				slds: [],
 				cql_filter: "species LIKE '%'",
 				queries: [["All Species", "species LIKE '%'"], ["Curlyleaf Pondweed", "species='Curlyleaf Pondweed'"], ["Eurasian Watermilfoil", "species='Eurasian Watermilfoil'"], ["Fanwort", "species='Fanwort'"], ["Variable-Leaf Milfoil", "species='Variable-Leaf Milfoil'"], ["Water Chestnut", "species='Water Chestnut'"]],
-                                updated: '2013-01-22'
+                                updated: '2014-07-22'
 				},{
 				name: 'argis:lakes',
 				title: 'Lakes',
@@ -260,7 +260,7 @@ var app = new GeoExplorer({
 				slds: [],
 				cql_filter: null,
 				queries: [],
-                                updated: '2013-01-22'
+                                updated: '2014-07-22'
 				},{
 				name: ':',
 				title: 'Digital Elevation Model 30m',

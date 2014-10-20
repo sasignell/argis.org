@@ -2,6 +2,6 @@
 $user="argis";
 $password="c*lumb!n3";
 $database="argis";
-$host="localhost";
+$host="208.105.130.200";
 $port="5432";
 ?>
