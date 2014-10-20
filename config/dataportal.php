@@ -1,4 +1,4 @@
-<link rel="stylesheet" type="text/css" href="http://www.208.105.130.200:8080/geoserver/www/aprgis/theme/app/geoexplorer.css" />
+<link rel="stylesheet" type="text/css" href="http://208.105.130.200:8080/geoserver/www/aprgis/theme/app/geoexplorer.css" />
 <style type="text/css">
 table
 {
@@ -58,9 +58,9 @@ border:1px solid gray;
 				<td>" . $row['last_updated'] . "</td>
 				<td>" . $row['updatefreq'] . "</td>
                                 <td><a style='color:black' href='" . $row['online_linkage'] . "' target='_blank'>Metadata</a></td>
-				<td><a style='color:black' href='http://www.208.105.130.200:8080/geoserver/wms?service=WMS&version=1.1.0&request=GetMap&layers=" . $row['geoserver_workspace'] . ":" . $row['geoserver_layer'] . "&styles=&bbox=474218.375,4766747.0,635668.0,4970120.0&width=406&height=512&srs=EPSG:26918&format=application/openlayers' target='_blank'>Preview</a></td>
-				<td><a style='color:black' href='http://www.208.105.130.200:8080/geoserver/wfs?request=GetFeature&amp;version=1.1.0&amp;typeName=" . $row['geoserver_workspace'] . ":" . $row['geoserver_layer'] . "&amp;outputFormat=SHAPE-ZIP' target='_blank'>Shapefile</a></td>
-				<td><a style='color:black' href='http://www.208.105.130.200:8080/geoserver/wms/kml?mode=download&&layers=" . $row['geoserver_workspace'] . ":" . $row['geoserver_layer'] . "' target='_blank'>KMZ</a></td></tr>";}
+				<td><a style='color:black' href='http://208.105.130.200:8080/geoserver/wms?service=WMS&version=1.1.0&request=GetMap&layers=" . $row['geoserver_workspace'] . ":" . $row['geoserver_layer'] . "&styles=&bbox=474218.375,4766747.0,635668.0,4970120.0&width=406&height=512&srs=EPSG:26918&format=application/openlayers' target='_blank'>Preview</a></td>
+				<td><a style='color:black' href='http://208.105.130.200:8080/geoserver/wfs?request=GetFeature&amp;version=1.1.0&amp;typeName=" . $row['geoserver_workspace'] . ":" . $row['geoserver_layer'] . "&amp;outputFormat=SHAPE-ZIP' target='_blank'>Shapefile</a></td>
+				<td><a style='color:black' href='http://208.105.130.200:8080/geoserver/wms/kml?mode=download&&layers=" . $row['geoserver_workspace'] . ":" . $row['geoserver_layer'] . "' target='_blank'>KMZ</a></td></tr>";}
 
 		while ($row = @pg_fetch_assoc($result2)){
 		echo 	"<tr><td>" . $row['title_of_dataset'] . "</td>
@@ -69,7 +69,7 @@ border:1px solid gray;
 				<td>" . $row['last_updated'] . "</td>
 				<td>" . $row['updatefreq'] . "</td>
                                 <td><a style='color:black' href='" . $row['online_linkage'] . "' target='_blank'>Metadata</a></td>
-				<td><a style='color:black' href='http://www.208.105.130.200:8080/geoserver/wms?service=WMS&version=1.1.0&request=GetMap&layers=" . $row['geoserver_workspace'] . ":" . $row['geoserver_layer'] . "&styles=&bbox=474218.375,4766747.0,635668.0,4970120.0&width=406&height=512&srs=EPSG:26918&format=application/openlayers' target='_blank'>Preview</a></td>
+				<td><a style='color:black' href='http://208.105.130.200:8080/geoserver/wms?service=WMS&version=1.1.0&request=GetMap&layers=" . $row['geoserver_workspace'] . ":" . $row['geoserver_layer'] . "&styles=&bbox=474218.375,4766747.0,635668.0,4970120.0&width=406&height=512&srs=EPSG:26918&format=application/openlayers' target='_blank'>Preview</a></td>
 				<td>Not Available</td>
 				<td>Not Available</td></tr>";
 		}
