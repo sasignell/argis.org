@@ -494,7 +494,7 @@ Ext.onReady(function () {
         visibility: false,
         displayInLayerSwitcher: true
     });
-    blueline = new OpenLayers.Layer.WMS("Adirondack Park Boundary", "http://aprgis.org:8080/geoserver/wms", {
+    blueline = new OpenLayers.Layer.WMS("Adirondack Park Boundary", "http://208.105.130.200:8080/geoserver/argis/wms", {
         layers: "argis:blueline",
         transparent: true,
         format: "image/png"
@@ -505,7 +505,7 @@ Ext.onReady(function () {
         visibility: true,
         displayInLayerSwitcher: true
     });
-    citytown = new OpenLayers.Layer.WMS("Cities & Towns", "http://aprgis.org:8080/geoserver/wms", {
+    citytown = new OpenLayers.Layer.WMS("Cities & Towns", "http://208.105.130.200:8080/geoserver/argis/wms", {
         layers: "argis:citytown",
         transparent: true,
         format: "image/png"/*,
@@ -517,7 +517,7 @@ Ext.onReady(function () {
         visibility: false,
         displayInLayerSwitcher: true
     });
-    landclass2012 = new OpenLayers.Layer.WMS("Land Use/Development Plan Map", "http://aprgis.org:8080/geoserver/wms", {
+    landclass2012 = new OpenLayers.Layer.WMS("Land Use/Development Plan Map", "http://208.105.130.200:8080/geoserver/argis/wms", {
         layers: "argis:landclass2012",
         transparent: true,
         format: "image/png"
@@ -528,7 +528,7 @@ Ext.onReady(function () {
         visibility: false,
         displayInLayerSwitcher: true
     });
-    streamflow = new OpenLayers.Layer.WMS("USGS Streamflow (Real-Time)", "http://aprgis.org:8080/geoserver/wms", {
+    streamflow = new OpenLayers.Layer.WMS("USGS Streamflow (Real-Time)", "http://208.105.130.200:8080/geoserver/argis/wms", {
         layers: "argis:streamflow",
         transparent: true,
         format: "image/png"
@@ -549,7 +549,7 @@ Ext.onReady(function () {
         visibility: false,
         displayInLayerSwitcher: true
     });
-    watershedshuc8 = new OpenLayers.Layer.WMS("Major Watersheds (HUC8)", "http://aprgis.org:8080/geoserver/wms", {
+    watershedshuc8 = new OpenLayers.Layer.WMS("Major Watersheds (HUC8)", "http://208.105.130.200:8080/geoserver/argis/wms", {
         layers: "argis:watershedshuc8",
         transparent: true,
         format: "image/png"
@@ -560,7 +560,7 @@ Ext.onReady(function () {
         visibility: false,
         displayInLayerSwitcher: true
     });
-    lakes = new OpenLayers.Layer.WMS("Lakes", "http://aprgis.org:8080/geoserver/wms", {
+    lakes = new OpenLayers.Layer.WMS("Lakes", "http://208.105.130.200:8080/geoserver/argis/wms", {
         layers: "argis:lakes",
         transparent: true,
         format: "image/png"
@@ -571,7 +571,7 @@ Ext.onReady(function () {
         visibility: false,
         displayInLayerSwitcher: true
     });
-    streams = new OpenLayers.Layer.WMS("Streams", "http://aprgis.org:8080/geoserver/wms", {
+    streams = new OpenLayers.Layer.WMS("Streams", "http://208.105.130.200:8080/geoserver/argis/wms", {
         layers: "argis:streams",
         transparent: true,
         format: "image/png"
@@ -582,7 +582,7 @@ Ext.onReady(function () {
         visibility: false,
         displayInLayerSwitcher: true
     });
-    wetlands = new OpenLayers.Layer.WMS("Wetlands", "http://aprgis.org:8080/geoserver/wms", {
+    wetlands = new OpenLayers.Layer.WMS("Wetlands", "http://208.105.130.200:8080/geoserver/argis/wms", {
         layers: "argis:wetlands",
         transparent: true,
         format: "image/png"
@@ -593,7 +593,7 @@ Ext.onReady(function () {
         visibility: false,
         displayInLayerSwitcher: true
     });
-    lakechem1984_1987 = new OpenLayers.Layer.WMS("Lake Chemistry Data 1984-1987", "http://aprgis.org:8080/geoserver/wms", {
+    lakechem1984_1987 = new OpenLayers.Layer.WMS("Lake Chemistry Data 1984-1987", "http://208.105.130.200:8080/geoserver/argis/wms", {
         layers: "argis:lakechem1984_1987",
         transparent: true,
         format: "image/png"
@@ -605,7 +605,7 @@ Ext.onReady(function () {
         displayInLayerSwitcher: true
     });
 
-    fishsurveylakes = new OpenLayers.Layer.WMS("Fish Surveys", "http://aprgis.org:8080/geoserver/wms", {
+    fishsurveylakes = new OpenLayers.Layer.WMS("Fish Surveys", "http://208.105.130.200:8080/geoserver/argis/wms", {
         layers: "argis:fishsurveylakes",
         transparent: true,
         format: "image/png"
@@ -617,7 +617,7 @@ Ext.onReady(function () {
         visibility: false,
         displayInLayerSwitcher: true
     });
-    terrestrialinvasives = new OpenLayers.Layer.WMS("Terrestrial Invasive Species", "http://aprgis.org:8080/geoserver/wms", {
+    terrestrialinvasives = new OpenLayers.Layer.WMS("Terrestrial Invasive Species", "http://208.105.130.200:8080/geoserver/argis/wms", {
         layers: "argis:terrestrialinvasives",
         transparent: true,
         format: "image/png"
@@ -628,7 +628,7 @@ Ext.onReady(function () {
         visibility: false,
         displayInLayerSwitcher: true
     });
-    aquaticinvasives = new OpenLayers.Layer.WMS("Aquatic Invasive Species", "http://aprgis.org:8080/geoserver/wms", {
+    aquaticinvasives = new OpenLayers.Layer.WMS("Aquatic Invasive Species", "http://208.105.130.200:8080/geoserver/argis/wms", {
         layers: "argis:aquaticinvasives",
         transparent: true,
         format: "image/png"
@@ -639,7 +639,7 @@ Ext.onReady(function () {
         visibility: false,
         displayInLayerSwitcher: true
     });
-    campsite = new OpenLayers.Layer.WMS("Campsites", "http://aprgis.org:8080/geoserver/wms", {
+    campsite = new OpenLayers.Layer.WMS("Campsites", "http://208.105.130.200:8080/geoserver/argis/wms", {
         layers: "argis:campsite",
         transparent: true,
         format: "image/png"
@@ -650,7 +650,7 @@ Ext.onReady(function () {
         visibility: false,
         displayInLayerSwitcher: true
     });
-    slt = new OpenLayers.Layer.WMS("Public Trails", "http://aprgis.org:8080/geoserver/wms", {
+    slt = new OpenLayers.Layer.WMS("Public Trails", "http://208.105.130.200:8080/geoserver/argis/wms", {
         layers: "argis:slt",
         transparent: true,
         format: "image/png"
@@ -661,7 +661,7 @@ Ext.onReady(function () {
         visibility: false,
         displayInLayerSwitcher: true
     });
-    trailregisters = new OpenLayers.Layer.WMS("Trail Registers", "http://aprgis.org:8080/geoserver/wms", {
+    trailregisters = new OpenLayers.Layer.WMS("Trail Registers", "http://208.105.130.200:8080/geoserver/argis/wms", {
         layers: "argis:trailregisters",
         transparent: true,
         format: "image/png"
@@ -695,7 +695,7 @@ Ext.onReady(function () {
         visibility: false,
         displayInLayerSwitcher: true
     });
-    firemap1916 = new OpenLayers.Layer.WMS("1916 Fire Protection Map", "http://aprgis.org:8080/geoserver/wms", {
+    firemap1916 = new OpenLayers.Layer.WMS("1916 Fire Protection Map", "http://208.105.130.200:8080/geoserver/argis/wms", {
         layers: "argis:firemap1916",
         transparent: true,
         format: "image/png"
@@ -706,7 +706,7 @@ Ext.onReady(function () {
         visibility: false,
         displayInLayerSwitcher: true
     });
-    blowdown1950 = new OpenLayers.Layer.WMS("1950 Blowdown Map", "http://aprgis.org:8080/geoserver/wms", {
+    blowdown1950 = new OpenLayers.Layer.WMS("1950 Blowdown Map", "http://208.105.130.200:8080/geoserver/argis/wms", {
         layers: "argis:blowdown1950",
         transparent: true,
         format: "image/png"
@@ -717,7 +717,7 @@ Ext.onReady(function () {
         visibility: false,
         displayInLayerSwitcher: true
     });
-    landclass2001 = new OpenLayers.Layer.WMS("2001 Land Use and Development Plan Map (APA)", "http://aprgis.org:8080/geoserver/wms", {
+    landclass2001 = new OpenLayers.Layer.WMS("2001 Land Use and Development Plan Map (APA)", "http://208.105.130.200:8080/geoserver/argis/wms", {
         layers: "argis:landclass2001",
         transparent: true,
         format: "image/png"
@@ -728,7 +728,7 @@ Ext.onReady(function () {
         visibility: false,
         displayInLayerSwitcher: true
     });
-    leantos = new OpenLayers.Layer.WMS("Lean-Tos", "http://aprgis.org:8080/geoserver/wms", {
+    leantos = new OpenLayers.Layer.WMS("Lean-Tos", "http://208.105.130.200:8080/geoserver/argis/wms", {
         layers: "argis:leantos",
         transparent: true,
         format: "image/png"
@@ -1255,7 +1255,7 @@ Ext.onReady(function () {
     }];
 
     selectCtrl = new OpenLayers.Control.WMSGetFeatureInfo({
-    	url: "http://aprgis.org:8080/geoserver/wms",
+    	url: "http://208.105.130.200:8080/geoserver/argis/wms",
     	title: 'Identify features by clicking',
     	layers: [citytown],
     	queryVisible: true,
@@ -1282,7 +1282,7 @@ Ext.onReady(function () {
     //selectCtrl.activate();
 
     infoCtrl = new OpenLayers.Control.WMSGetFeatureInfo({
-        url: "http://aprgis.org:8080/geoserver/wms",
+        url: "http://208.105.130.200:8080/geoserver/argis/wms",
         title: "Identify features by clicking",
         layers: [fishsurveylakes, aquaticinvasives, lakechem1984_1987, wetlands, streams, lakes, watershedshuc8, streamflow, landclass2012, citytown, terrestrialinvasives, slt, trailregisters,campsite, leantos],
         queryVisible: true,
