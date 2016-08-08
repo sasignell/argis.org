@@ -31,6 +31,6 @@
 	<br/>
 	<p><b>ARGIS Architecture:</b></p>
 	<p>ARGIS is built on a LINUX server using free, open-source software:</p>
-	<div class="center"><img style="width: 600px; height: 186px;" src="http://www.argis.org/argis/img/technology.png">
+	<div class="center"><img style="width: 600px; height: 186px;" src="http://www.argis.org/img/technology.png">
 	</div>
 	</div>

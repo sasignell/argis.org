@@ -7,31 +7,31 @@
 <a href="#download">Downloads and Web Map Services</a></br>
 
 <a name="toolbar"><p><font size="3"><b>Toolbar</b></font></p>
-<img src="http://www.argis.org/argis/img/geosilk/handpan.png"/>
+<img src="http://www.argis.org/img/geosilk/handpan.png"/>
 <b>   Pan:</b> click-hold and move mouse to pan the map.</br>
 
-<img src="http://www.argis.org/argis/img/silk/magnifier_zoom_in.png"/>
+<img src="http://www.argis.org/img/silk/magnifier_zoom_in.png"/>
 <b>   Zoom in:</b> single click on the map will perfom fixed zoom in, or click-hold and draw a polygon to zoom to a specific area.  </br>
 
-<img src="http://www.argis.org/argis/img/silk/magnifier_zoom_out.png"/>
+<img src="http://www.argis.org/img/silk/magnifier_zoom_out.png"/>
 <b>  Zoom out:</b> single click on the map will perform fixed zoom out.</br>
 
-<img src="http://www.argis.org/argis/img/silk/arrow_left.png"/> 
+<img src="http://www.argis.org/img/silk/arrow_left.png"/> 
 <b>   Previous extent:</b> toggle back to last map extent.</br>
 
-<img src="http://www.argis.org/argis/img/silk/arrow_right.png"/>
+<img src="http://www.argis.org/img/silk/arrow_right.png"/>
 <b>   Next extent:</b> toggle forward to next map extent.</br>
 
-<img src="http://www.argis.org/argis/img/silk/arrow_out.png"/>
+<img src="http://www.argis.org/img/silk/arrow_out.png"/>
    <b>   Full extent:</b> zoom to full extent of the active layers.</br>
 
-<img src="http://www.argis.org/argis/img/silk/information.png"/>
+<img src="http://www.argis.org/img/silk/information.png"/>
    <b>   Information:</b> click on features on the map to get more information, reports and/or links to other datasets or websites.</br>
 
-<img src="http://www.argis.org/argis/img/geosilk/ruler.png"/>
+<img src="http://www.argis.org/img/geosilk/ruler.png"/>
    <b>   Ruler:</b> click on the map to calculate line distances or polygon areas.</br>
 
-<img src="http://www.argis.org/argis/img/silk/find.png"/>
+<img src="http://www.argis.org/img/silk/find.png"/>
    <b>   Subset and Download:</b> open Query Dialogue to filter and/or download data by geographic extent, view attribute tables.
 </br>
 </br>

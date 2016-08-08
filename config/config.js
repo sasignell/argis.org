@@ -10,6 +10,20 @@ var app = new GeoExplorer({
 						center: [0, 0],
 						zoom: 1,
 						layers: [{
+				name: 'argis:asset',
+				title: 'DEC Assets',
+				originator: 'New York State Department of Environmental Conservation',
+                                format: 'image/png',
+				group: '',
+				visibility: false,
+				metadata: '',
+				description: "",
+				styles: '',
+				slds: [],
+				cql_filter: ,
+				queries: [],
+                                updated: '2012-05-25'
+				},{
 				name: 'argis:landclass2001',
 				title: '2001 Land Use/Development Plan Map',
 				originator: 'New York State Adirondack Park Agency',
@@ -94,19 +108,19 @@ var app = new GeoExplorer({
 				queries: [],
                                 updated: '2010-12-01'
 				},{
-				name: 'argis:streams',
-				title: 'Streams',
-				originator: 'NY State Department of Environmental Conservation,Division of Fish, Wildlife Marine Resources',
+				name: 'ADKPUBLIC:alsc1992_2010',
+				title: 'Lake Chemistry Data 1992-2010',
+				originator: 'Adirondack Lakes Survey Corporation',
                                 format: 'image/png',
-				group: 'hydrography',
+				group: 'lakes',
 				visibility: false,
-				metadata: 'http://www.dec.ny.gov/outdoor/7927.html',
-				description: "Division of Fish, Wildlife Marine Resources added state-wide Fisheries Identification Numbers (FINs) to the National Hydrography Dataset (NHD) flowline layer.",
+				metadata: 'http://www.adirondacklakessurvey.org/',
+				description: "In 1991, the ALSC developed a proposal to conduct a long-term monitoring program (LTM) for evaluating changes in water chemistry in a selected set of representative Adirondack waters. This project, funded by USEPA and others, began in the spring of 1992. The primary goal of this project was to evaluate the effectiveness of the Clean Air Act Amendments of 1990 (CAAA) which mandated significant reductions in sulfer dioxide (SO2) and oxides of nitrogen (NOx), pollutants that are responsible for acidic deposition. Research produced ongoing detailed assessment of temporal and spatial chemistry of waters located in the Adirondack region.",
 				styles: '',
 				slds: [],
 				cql_filter: null,
 				queries: [],
-                                updated: '2011-06-28'
+                                updated: '2009-12-01'
 				},{
 				name: 'argis:campsite',
 				title: 'Campsites',
@@ -122,6 +136,20 @@ var app = new GeoExplorer({
 				queries: [],
                                 updated: '2012-05-25'
 				},{
+				name: 'argis:streams',
+				title: 'Streams',
+				originator: 'NY State Department of Environmental Conservation,Division of Fish, Wildlife Marine Resources',
+                                format: 'image/png',
+				group: 'hydrography',
+				visibility: false,
+				metadata: 'http://www.dec.ny.gov/outdoor/7927.html',
+				description: "Division of Fish, Wildlife Marine Resources added state-wide Fisheries Identification Numbers (FINs) to the National Hydrography Dataset (NHD) flowline layer.",
+				styles: '',
+				slds: [],
+				cql_filter: null,
+				queries: [],
+                                updated: '2011-06-28'
+				},{
 				name: 'argis:landclass2012',
 				title: '2012 Land Use/Development Plan Map (APA)',
 				originator: 'New York State Adirondack Park Agency',
@@ -135,20 +163,6 @@ var app = new GeoExplorer({
 				cql_filter: "lccd < 15",
 				queries: [["All Classes", "lccd < 15"],["Hamlet", "lccd = '1'"],["Moderate Intensity Use", "lccd = '2'"],["Low Intensity Use", "lccd = '3'"],["Rural Use", "lccd = '4'"],["Resource Management", "lccd = '5'"],["Industrial Use", "lccd = '6'"],["Wilderness", "lccd = '7'"],["Canoe Area", "lccd = '8'"],["Primitive Area", "lccd = '9'"],["Wild Forest", "lccd = '10'"],["Intensive Use", "lccd = '11'"],["Historic", "lccd = '12'"],["State Administrative", "lccd = '13'"],["Pending Classification", "lccd = '14'"]],
                                 updated: '2011-04-01'
-				},{
-				name: 'ADKPUBLIC:alsc1992_2010',
-				title: 'Lake Chemistry Data 1992-2010',
-				originator: 'Adirondack Lakes Survey Corporation',
-                                format: 'image/png',
-				group: 'lakes',
-				visibility: false,
-				metadata: 'http://www.adirondacklakessurvey.org/',
-				description: "In 1991, the ALSC developed a proposal to conduct a long-term monitoring program (LTM) for evaluating changes in water chemistry in a selected set of representative Adirondack waters. This project, funded by USEPA and others, began in the spring of 1992. The primary goal of this project was to evaluate the effectiveness of the Clean Air Act Amendments of 1990 (CAAA) which mandated significant reductions in sulfer dioxide (SO2) and oxides of nitrogen (NOx), pollutants that are responsible for acidic deposition. Research produced ongoing detailed assessment of temporal and spatial chemistry of waters located in the Adirondack region.",
-				styles: '',
-				slds: [],
-				cql_filter: null,
-				queries: [],
-                                updated: '2009-12-01'
 				},{
 				name: 'argis:trailregisters',
 				title: 'Trailhead Registers',
@@ -164,19 +178,19 @@ var app = new GeoExplorer({
 				queries: [],
                                 updated: '2012-05-25'
 				},{
-				name: 'argis:alschistoric',
-				title: 'Lake Chemistry Data 1984-87',
-				originator: 'Adirondack Lakes Survey Corporation',
+				name: 'argis:aquaticinvasives',
+				title: 'Aquatic Invasive Species (APIPP)',
+				originator: 'Adirondack Park Invasive Plants Program',
                                 format: 'image/png',
-				group: 'lakes',
+				group: 'invasives',
 				visibility: false,
-				metadata: 'http://www.adirondacklakessurvey.org/',
-				description: "Reported water chemistry data are from the intensive lake chemistry survey conducted between the months of July and August from 1984 &#8211; 1987 as part of the larger Adirondack lakes survey of chemistry and fish. This intensive sampling took place in the summer when most Adirondack waters are typically stratified. When possible, the middle or deepest part of the lake was sampled to avoid the effects of littoral zones and inlet streams. Samples in isothermal waters were collected 1.5 meters below the surface or at mid-depth when the waters were less than 1.5 meters deep. In stratified waters, a sample was collected at 1.5 meters below the surface and also half way between the thermocline and the bottom. Chemical analysis was conducted at the Adirondack Lakes Survey Corporation (ALSC) laboratory in Ray Brook following EPA guidelines. Table 1 lists the chemical parameters analyzed and units of concentration reported.",
+				metadata: 'http://www.adkinvasives.com/Aquatic/Maps/Maps.asp',
+				description: "These data include information collected by APIPP volunteer plant monitors, as well as documentation provided by other monitoring or plant identification programs operating in the Adirondack Park. The latter include the Darrin Fresh Water Institute plant identification program, the N.Y. Dept. of Environmental Conservation's Citizens Statewide Lake Assessment Program (CSLAP), and reports from Paul Smith College's Adirondack Watershed Institute. It is important to note that methods for data collection may vary by program. Data definitions and methodological variations are documented in the APIPP meta-data summary. ",
 				styles: '',
 				slds: [],
-				cql_filter: null,
-				queries: [],
-                                updated: '2001-07-16'
+				cql_filter: "species LIKE '%'",
+				queries: [["All Species", "species LIKE '%'"], ["Curlyleaf Pondweed", "species='Curlyleaf Pondweed'"], ["Eurasian Watermilfoil", "species='Eurasian Watermilfoil'"], ["Fanwort", "species='Fanwort'"], ["Variable-Leaf Milfoil", "species='Variable-Leaf Milfoil'"], ["Water Chestnut", "species='Water Chestnut'"]],
+                                updated: '2014-07-22'
 				},{
 				name: 'argis:citytown',
 				title: 'Cities & Towns',
@@ -192,20 +206,6 @@ var app = new GeoExplorer({
 				queries: [],
                                 updated: '2011-04-30'
 				},{
-				name: 'argis:aquaticinvasives',
-				title: 'Aquatic Invasive Species (APIPP)',
-				originator: 'Adirondack Park Invasive Plants Program',
-                                format: 'image/png',
-				group: 'invasives',
-				visibility: false,
-				metadata: 'http://www.adkinvasives.com/Aquatic/Maps/Maps.asp',
-				description: "These data include information collected by APIPP volunteer plant monitors, as well as documentation provided by other monitoring or plant identification programs operating in the Adirondack Park. The latter include the Darrin Fresh Water Institute plant identification program, the N.Y. Dept. of Environmental Conservation's Citizens Statewide Lake Assessment Program (CSLAP), and reports from Paul Smith College's Adirondack Watershed Institute. It is important to note that methods for data collection may vary by program. Data definitions and methodological variations are documented in the APIPP meta-data summary. ",
-				styles: '',
-				slds: [],
-				cql_filter: "species LIKE '%'",
-				queries: [["All Species", "species LIKE '%'"], ["Curlyleaf Pondweed", "species='Curlyleaf Pondweed'"], ["Eurasian Watermilfoil", "species='Eurasian Watermilfoil'"], ["Fanwort", "species='Fanwort'"], ["Variable-Leaf Milfoil", "species='Variable-Leaf Milfoil'"], ["Water Chestnut", "species='Water Chestnut'"]],
-                                updated: '2014-07-22'
-				},{
 				name: 'argis:lakes',
 				title: 'Lakes',
 				originator: 'SUNY-ESF Adirondack Ecological Center',
@@ -219,20 +219,6 @@ var app = new GeoExplorer({
 				cql_filter: null,
 				queries: [],
                                 updated: '2011-04-01'
-				},{
-				name: 'argis:watershedshuc8',
-				title: 'Major Watersheds (HUC8)',
-				originator: 'U.S. Federal and State Agencies',
-                                format: 'image/png',
-				group: 'hydrography',
-				visibility: false,
-				metadata: 'http://www.geodata.gov/E-FW/DiscoveryServlet?uuid={4BDFFA3C-710B-4A27-B8F5-A82C0F32FEE8}&xmltransform=metadata_details.xsl',
-				description: "The Watershed Boundary Dataset (WBD) is a complete digital hydrologic unit national boundary layer that is at the Subwatershed (12-digit) level. It is composed of the watershed boundaries delineated by state agencies at the 1:24,000 scale. Please refer to the individual state metadata as the primary reference source. To access state specific metadata, go to the following link to view documentation created by agencies that performed the watershed delineation. ftp:\/\/ftp.ftw.nrcs.usda.gov\/pub\/wbd\/hu\/metadata.",
-				styles: '',
-				slds: [],
-				cql_filter: null,
-				queries: [],
-                                updated: '2011-03-18'
 				},{
 				name: ':',
 				title: 'Hillshade 30m',
@@ -248,61 +234,33 @@ var app = new GeoExplorer({
 				queries: [],
                                 updated: '2006-01-01'
 				},{
-				name: 'argis:streamflow',
-				title: 'USGS Streamflow (Real-Time)',
-				originator: 'U.S. Geological Survey',
+				name: 'argis:watershedshuc8',
+				title: 'Major Watersheds (HUC8)',
+				originator: 'U.S. Federal and State Agencies',
                                 format: 'image/png',
 				group: 'hydrography',
 				visibility: false,
-				metadata: 'http://waterwatch.usgs.gov/index.php',
-				description: "U.S. Geological Survey (USGS) current streamflow conditions for the NY State. The real-time information generally is updated on an hourly basis. ",
+				metadata: 'http://www.geodata.gov/E-FW/DiscoveryServlet?uuid={4BDFFA3C-710B-4A27-B8F5-A82C0F32FEE8}&xmltransform=metadata_details.xsl',
+				description: "The Watershed Boundary Dataset (WBD) is a complete digital hydrologic unit national boundary layer that is at the Subwatershed (12-digit) level. It is composed of the watershed boundaries delineated by state agencies at the 1:24,000 scale. Please refer to the individual state metadata as the primary reference source. To access state specific metadata, go to the following link to view documentation created by agencies that performed the watershed delineation. ftp:\/\/ftp.ftw.nrcs.usda.gov\/pub\/wbd\/hu\/metadata.",
 				styles: '',
 				slds: [],
 				cql_filter: null,
 				queries: [],
-                                updated: '2014-07-22'
+                                updated: '2011-03-18'
 				},{
-				name: ':',
-				title: 'Digital Elevation Model 30m',
-				originator: 'NASA',
+				name: 'argis:alschistoric',
+				title: 'Lake Chemistry Data 1984-87',
+				originator: 'Adirondack Lakes Survey Corporation',
                                 format: 'image/png',
-				group: '',
+				group: 'lakes',
 				visibility: false,
-				metadata: 'http://aprgis.org/argis/metadata/adk_30m_dem.html',
-				description: "30m DEM  produced by USGS SRTM (Shuttle Radar Topography Mission) in the year 2000.  Elevation units are meters.\n\nData Downloaded from USGS Seamless Data Distribution Site:\nhttp:\/\/seamless.usgs.gov\/website\/seamless\/viewer.php\nPost-processing performed by Steve Signell, Adirondack Ecological Center in Nov. 2005:\n \n1. Data tiles downloaded from USGS site\n2. Tiles reprojected to UTM 18N.\n3. Tiles mosaicked to create a coverage for the entire Adirondack park with a 10k buffer.\n4.  Several small voids due to mountain shadows were filled using values from the 30m NED downloaded from the USGS Seamless site.",
+				metadata: 'http://www.adirondacklakessurvey.org/',
+				description: "Reported water chemistry data are from the intensive lake chemistry survey conducted between the months of July and August from 1984 &#8211; 1987 as part of the larger Adirondack lakes survey of chemistry and fish. This intensive sampling took place in the summer when most Adirondack waters are typically stratified. When possible, the middle or deepest part of the lake was sampled to avoid the effects of littoral zones and inlet streams. Samples in isothermal waters were collected 1.5 meters below the surface or at mid-depth when the waters were less than 1.5 meters deep. In stratified waters, a sample was collected at 1.5 meters below the surface and also half way between the thermocline and the bottom. Chemical analysis was conducted at the Adirondack Lakes Survey Corporation (ALSC) laboratory in Ray Brook following EPA guidelines. Table 1 lists the chemical parameters analyzed and units of concentration reported.",
 				styles: '',
 				slds: [],
 				cql_filter: null,
 				queries: [],
-                                updated: '2006-01-01'
-				},{
-				name: 'argis:leantos',
-				title: 'Lean-Tos',
-				originator: 'New York State Department of Environmental Conservation',
-                                format: 'image/png',
-				group: 'recreation',
-				visibility: false,
-				metadata: '',
-				description: "This dataset was created by querying the NYS DEC \"State Land Assets\" layer WHERE asset=\"LEAN-TO\"",
-				styles: '',
-				slds: [],
-				cql_filter: null,
-				queries: [],
-                                updated: '2012-05-25'
-				},{
-				name: 'ADK:**Blowdown1995',
-				title: 'July 1995 Micro-Burst Map',
-				originator: 'Geography Department of St. Lawrence University',
-                                format: 'image/png',
-				group: '',
-				visibility: false,
-				metadata: 'http://aprgis.org/argis/metadata/ADK_bdown95.html',
-				description: "The Oswegatchie\/Black study area has been the scene of major natural disturbances documented in the proposal and incorporated in the basic data for the project. On July 15, 1995, a storm event impacted thousands of acres of forest, concentrated in the Five Ponds Wilderness area, but also distributed throughout the region, including significant areas of private forest. The Adirondack Park Agency proposed to evaluate the spatial extent of the damage and use of remote sensing techniques for quantitative analysis of the degree of damage in cooperation with Dr. William Elberty, chair of the Geography Department at St. Lawrence University. The project was amended to incorporate cooperative acquisition of Thematic Mapper images covering this area for the period August 1994 and August 1995. Acquisition was made possible by financial contributions from the NYS Department of Environmental Conservation (the lead agency for disaster response), St. Lawrence University Department of Geography, Niagara Mohawk Power Corporation and the Adirondack Park Agency.\nThe primary products of this effort are: 1) classified images using two different techniques to map the storm damage, also available in digital and printed formats; and 2) secondary analyses and documentation by Dr. Elberty as the data are used for teaching and student projects at St. Lawrence University. The primary data sets are owned by the Adirondack Park Agency and maintained at the Geography Department of St. Lawrence University.",
-				styles: '',
-				slds: [],
-				cql_filter: null,
-				queries: [],
-                                updated: '2006-01-01'
+                                updated: '2001-07-16'
 				},{
 				name: 'argis:terrestrialinvasives',
 				title: 'Terrestrial Invasive Species (APIPP)',
@@ -331,6 +289,62 @@ var app = new GeoExplorer({
 				cql_filter: null,
 				queries: [],
                                 updated: '1993-09-14'
+				},{
+				name: 'ADK:**Blowdown1995',
+				title: 'July 1995 Micro-Burst Map',
+				originator: 'Geography Department of St. Lawrence University',
+                                format: 'image/png',
+				group: '',
+				visibility: false,
+				metadata: 'http://aprgis.org/argis/metadata/ADK_bdown95.html',
+				description: "The Oswegatchie\/Black study area has been the scene of major natural disturbances documented in the proposal and incorporated in the basic data for the project. On July 15, 1995, a storm event impacted thousands of acres of forest, concentrated in the Five Ponds Wilderness area, but also distributed throughout the region, including significant areas of private forest. The Adirondack Park Agency proposed to evaluate the spatial extent of the damage and use of remote sensing techniques for quantitative analysis of the degree of damage in cooperation with Dr. William Elberty, chair of the Geography Department at St. Lawrence University. The project was amended to incorporate cooperative acquisition of Thematic Mapper images covering this area for the period August 1994 and August 1995. Acquisition was made possible by financial contributions from the NYS Department of Environmental Conservation (the lead agency for disaster response), St. Lawrence University Department of Geography, Niagara Mohawk Power Corporation and the Adirondack Park Agency.\nThe primary products of this effort are: 1) classified images using two different techniques to map the storm damage, also available in digital and printed formats; and 2) secondary analyses and documentation by Dr. Elberty as the data are used for teaching and student projects at St. Lawrence University. The primary data sets are owned by the Adirondack Park Agency and maintained at the Geography Department of St. Lawrence University.",
+				styles: '',
+				slds: [],
+				cql_filter: null,
+				queries: [],
+                                updated: '2006-01-01'
+				},{
+				name: 'argis:leantos',
+				title: 'Lean-Tos',
+				originator: 'New York State Department of Environmental Conservation',
+                                format: 'image/png',
+				group: 'recreation',
+				visibility: false,
+				metadata: '',
+				description: "This dataset was created by querying the NYS DEC \"State Land Assets\" layer WHERE asset=\"LEAN-TO\"",
+				styles: '',
+				slds: [],
+				cql_filter: null,
+				queries: [],
+                                updated: '2012-05-25'
+				},{
+				name: 'argis:streamflow',
+				title: 'USGS Streamflow (Real-Time)',
+				originator: 'U.S. Geological Survey',
+                                format: 'image/png',
+				group: 'hydrography',
+				visibility: false,
+				metadata: 'http://waterwatch.usgs.gov/index.php',
+				description: "U.S. Geological Survey (USGS) current streamflow conditions for the NY State. The real-time information generally is updated on an hourly basis. ",
+				styles: '',
+				slds: [],
+				cql_filter: null,
+				queries: [],
+                                updated: '2014-07-22'
+				},{
+				name: ':',
+				title: 'Digital Elevation Model 30m',
+				originator: 'NASA',
+                                format: 'image/png',
+				group: '',
+				visibility: false,
+				metadata: 'http://aprgis.org/argis/metadata/adk_30m_dem.html',
+				description: "30m DEM  produced by USGS SRTM (Shuttle Radar Topography Mission) in the year 2000.  Elevation units are meters.\n\nData Downloaded from USGS Seamless Data Distribution Site:\nhttp:\/\/seamless.usgs.gov\/website\/seamless\/viewer.php\nPost-processing performed by Steve Signell, Adirondack Ecological Center in Nov. 2005:\n \n1. Data tiles downloaded from USGS site\n2. Tiles reprojected to UTM 18N.\n3. Tiles mosaicked to create a coverage for the entire Adirondack park with a 10k buffer.\n4.  Several small voids due to mountain shadows were filled using values from the 30m NED downloaded from the USGS Seamless site.",
+				styles: '',
+				slds: [],
+				cql_filter: null,
+				queries: [],
+                                updated: '2006-01-01'
 				}]
 						},
 				wfs: '/geoserver/wfs'

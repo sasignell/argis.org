@@ -740,7 +740,7 @@ Ext.onReady(function () {
         displayInLayerSwitcher: true
     });
 
-    map.addLayers([gphy,bingmap,mapquestOSM, OSMterrain, USGSimagery, USGSdrg24k, USGSdrg100k, USGSdrg250k, nysdop11, nysdopLatest, bingsat, binghyb, gmap, gsat, ghyb, precipAccumulation72hr, precipAccumulation48hr, precipAccumulation24hr, precipAccumulation12hr, precipAccumulation6hr, precipAccumulation3hr, precipAccumulation1hr, surfaceWindVelocity, surfaceWindSpeed, surfaceAirTemp, ridgeRADAR,  landclass2001, landclass2012, blowdown1950, firemap1916, streams, wetlands,lakes, aquaticinvasives, fishsurveylakes, lakechem1984_1987,watershedshuc8, citytown,  blueline, slt, streamflow, trailregisters, campsite, terrestrialinvasives, leantos, highlightLayer, layerRuler]);
+    map.addLayers([bingmap,gphy,mapquestOSM, OSMterrain, USGSimagery, USGSdrg24k, USGSdrg100k, USGSdrg250k, nysdop11, nysdopLatest, bingsat, binghyb, gmap, gsat, ghyb, precipAccumulation72hr, precipAccumulation48hr, precipAccumulation24hr, precipAccumulation12hr, precipAccumulation6hr, precipAccumulation3hr, precipAccumulation1hr, surfaceWindVelocity, surfaceWindSpeed, surfaceAirTemp, ridgeRADAR,  landclass2001, landclass2012, blowdown1950, firemap1916, streams, wetlands,lakes, aquaticinvasives, fishsurveylakes, lakechem1984_1987,watershedshuc8, citytown,  blueline, slt, streamflow, trailregisters, campsite, terrestrialinvasives, leantos, highlightLayer, layerRuler]);
 
     var treeConfig = [{
         text: "<b>&nbsp;Administrative Boundaries</b>",
