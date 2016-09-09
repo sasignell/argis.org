@@ -58,15 +58,15 @@ function checkDisclaimer() {
         var disclaimerWin = new Ext.Window({
             layout: 'fit',
             modal: true,
-            title: 'Application Disclaimer',
-            width: 500,
-            height: 150,
+            title: 'Welcome to ARGIS',
+            width: 600,
+            height: 450,
             closable: false,
             resizable: false,
             plain: true,
             border: true,
             closeAction: 'hide',
-            html: '<div style="padding: 5px">The data provided on this site is for informational and planning purposes only.<br><br>Absolutely no accuracy or completeness guarantee is implied or intended. All information on this map is subject to such variations and corrections as might result from a complete title search and/or accurate field survey.  <strong>NOTE: This site is no longer being actively updated due to lack of funding.</strong></div>',
+            html: '<div style="padding: 15px; font-size:24px;">The data provided on this site is for informational and planning purposes only.<br><br> NOTE: This site is no longer being actively updated due to lack of funding.  <br><br>Try out the <a href="http://adirondackatlas.org" target="_blank_">Adirondack Atlas</a> for an  updated,mobile-friendly version of this site. </div>',
             buttons: [{
                 text: 'Accept Disclaimer',
                 handler: function () {
