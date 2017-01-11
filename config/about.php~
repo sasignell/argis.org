@@ -1,4 +1,4 @@
-<link rel="stylesheet" type="text/css" href="http://www.aprgis.org:8080/geoserver/www/aprgis/theme/app/geoexplorer.css" />
+<link rel="stylesheet" type="text/css" href="http://www.argis.org:8080/geoserver/www/aprgis/theme/app/geoexplorer.css" />
 <p><b><font size="4">About ARGIS</font></b></p>
 </br><p>Welcome to the Adirondack Regional Geographic Information System (ARGIS), a regional spatial data portal built using open-source software and designed to serve data that is authoritative, visualized, interactive and dynamic ("AVID").  ARGIS was created by Steve Signell (SUNY-ESF Adirondack Ecological Center) and Bryan McBride (geoserving.net), and funded by a grant from the New York State Department of Environmental Conservation and contributions from data providers. Current data contributors include:</p>
 	<p><ul class="ulCls">
@@ -34,6 +34,6 @@
 	<br/>
 	<p><b>ARGIS Architecture:</b></p>
 	<p>ARGIS is built on a LINUX server using free, open-source software:</p>
-	<div class="center"><img style="width: 600px; height: 186px;" src="http://www.aprgis.org:8080/geoserver/www/aprgis/theme/app/img/technology.png">
+	<div class="center"><img style="width: 600px; height: 186px;" src="http://www.argis.org:8080/geoserver/www/aprgis/theme/app/img/technology.png">
 	</div>
 	</div>

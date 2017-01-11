@@ -494,7 +494,7 @@ Ext.onReady(function () {
         visibility: false,
         displayInLayerSwitcher: true
     });
-    blueline = new OpenLayers.Layer.WMS("Adirondack Park Boundary", "http://aprgis.org:8080/geoserver/wms", {
+    blueline = new OpenLayers.Layer.WMS("Adirondack Park Boundary", "http://argis.org:8080/geoserver/wms", {
         layers: "argis:blueline",
         transparent: true,
         format: "image/png"
@@ -505,7 +505,7 @@ Ext.onReady(function () {
         visibility: true,
         displayInLayerSwitcher: true
     });
-    citytown = new OpenLayers.Layer.WMS("Cities & Towns", "http://aprgis.org:8080/geoserver/wms", {
+    citytown = new OpenLayers.Layer.WMS("Cities & Towns", "http://argis.org:8080/geoserver/wms", {
         layers: "argis:citytown",
         transparent: true,
         format: "image/png"/*,
@@ -517,7 +517,7 @@ Ext.onReady(function () {
         visibility: false,
         displayInLayerSwitcher: true
     });
-    landclass2012 = new OpenLayers.Layer.WMS("Land Use/Development Plan Map", "http://aprgis.org:8080/geoserver/wms", {
+    landclass2012 = new OpenLayers.Layer.WMS("Land Use/Development Plan Map", "http://argis.org:8080/geoserver/wms", {
         layers: "argis:landclass2012",
         transparent: true,
         format: "image/png"
@@ -528,7 +528,7 @@ Ext.onReady(function () {
         visibility: false,
         displayInLayerSwitcher: true
     });
-    streamflow = new OpenLayers.Layer.WMS("USGS Streamflow (Real-Time)", "http://aprgis.org:8080/geoserver/wms", {
+    streamflow = new OpenLayers.Layer.WMS("USGS Streamflow (Real-Time)", "http://argis.org:8080/geoserver/wms", {
         layers: "argis:streamflow",
         transparent: true,
         format: "image/png"
@@ -549,7 +549,7 @@ Ext.onReady(function () {
         visibility: false,
         displayInLayerSwitcher: true
     });
-    watershedshuc8 = new OpenLayers.Layer.WMS("Major Watersheds (HUC8)", "http://aprgis.org:8080/geoserver/wms", {
+    watershedshuc8 = new OpenLayers.Layer.WMS("Major Watersheds (HUC8)", "http://argis.org:8080/geoserver/wms", {
         layers: "argis:watershedshuc8",
         transparent: true,
         format: "image/png"
@@ -560,7 +560,7 @@ Ext.onReady(function () {
         visibility: false,
         displayInLayerSwitcher: true
     });
-    lakes = new OpenLayers.Layer.WMS("Lakes", "http://aprgis.org:8080/geoserver/wms", {
+    lakes = new OpenLayers.Layer.WMS("Lakes", "http://argis.org:8080/geoserver/wms", {
         layers: "argis:lakes",
         transparent: true,
         format: "image/png"
@@ -571,7 +571,7 @@ Ext.onReady(function () {
         visibility: false,
         displayInLayerSwitcher: true
     });
-    streams = new OpenLayers.Layer.WMS("Streams", "http://aprgis.org:8080/geoserver/wms", {
+    streams = new OpenLayers.Layer.WMS("Streams", "http://argis.org:8080/geoserver/wms", {
         layers: "argis:streams",
         transparent: true,
         format: "image/png"
@@ -582,7 +582,7 @@ Ext.onReady(function () {
         visibility: false,
         displayInLayerSwitcher: true
     });
-    wetlands = new OpenLayers.Layer.WMS("Wetlands", "http://aprgis.org:8080/geoserver/wms", {
+    wetlands = new OpenLayers.Layer.WMS("Wetlands", "http://argis.org:8080/geoserver/wms", {
         layers: "argis:wetlands",
         transparent: true,
         format: "image/png"
@@ -593,7 +593,7 @@ Ext.onReady(function () {
         visibility: false,
         displayInLayerSwitcher: true
     });
-    lakechem1984_1987 = new OpenLayers.Layer.WMS("Lake Chemistry Data 1984-1987", "http://aprgis.org:8080/geoserver/wms", {
+    lakechem1984_1987 = new OpenLayers.Layer.WMS("Lake Chemistry Data 1984-1987", "http://argis.org:8080/geoserver/wms", {
         layers: "argis:lakechem1984_1987",
         transparent: true,
         format: "image/png"
@@ -605,7 +605,7 @@ Ext.onReady(function () {
         displayInLayerSwitcher: true
     });
 
-    fishsurveylakes = new OpenLayers.Layer.WMS("Fish Surveys", "http://aprgis.org:8080/geoserver/wms", {
+    fishsurveylakes = new OpenLayers.Layer.WMS("Fish Surveys", "http://argis.org:8080/geoserver/wms", {
         layers: "argis:fishsurveylakes",
         transparent: true,
         format: "image/png"
@@ -617,7 +617,7 @@ Ext.onReady(function () {
         visibility: false,
         displayInLayerSwitcher: true
     });
-    terrestrialinvasives = new OpenLayers.Layer.WMS("Terrestrial Invasive Species", "http://aprgis.org:8080/geoserver/wms", {
+    terrestrialinvasives = new OpenLayers.Layer.WMS("Terrestrial Invasive Species", "http://argis.org:8080/geoserver/wms", {
         layers: "argis:terrestrialinvasives",
         transparent: true,
         format: "image/png"
@@ -628,7 +628,7 @@ Ext.onReady(function () {
         visibility: false,
         displayInLayerSwitcher: true
     });
-    aquaticinvasives = new OpenLayers.Layer.WMS("Aquatic Invasive Species", "http://aprgis.org:8080/geoserver/wms", {
+    aquaticinvasives = new OpenLayers.Layer.WMS("Aquatic Invasive Species", "http://argis.org:8080/geoserver/wms", {
         layers: "argis:aquaticinvasives",
         transparent: true,
         format: "image/png"
@@ -639,7 +639,7 @@ Ext.onReady(function () {
         visibility: false,
         displayInLayerSwitcher: true
     });
-    trailregisters = new OpenLayers.Layer.WMS("Trailhead Registers", "http://aprgis.org:8080/geoserver/wms", {
+    trailregisters = new OpenLayers.Layer.WMS("Trailhead Registers", "http://argis.org:8080/geoserver/wms", {
         layers: "argis:trailregisters",
         transparent: true,
         format: "image/png"
@@ -650,7 +650,7 @@ Ext.onReady(function () {
         visibility: false,
         displayInLayerSwitcher: true
     });
-    slt = new OpenLayers.Layer.WMS("Public Trails", "http://aprgis.org:8080/geoserver/wms", {
+    slt = new OpenLayers.Layer.WMS("Public Trails", "http://argis.org:8080/geoserver/wms", {
         layers: "argis:slt",
         transparent: true,
         format: "image/png"
@@ -683,7 +683,7 @@ Ext.onReady(function () {
         visibility: false,
         displayInLayerSwitcher: true
     });
-    firemap1916 = new OpenLayers.Layer.WMS("1916 Fire Protection Map", "http://aprgis.org:8080/geoserver/wms", {
+    firemap1916 = new OpenLayers.Layer.WMS("1916 Fire Protection Map", "http://argis.org:8080/geoserver/wms", {
         layers: "argis:firemap1916",
         transparent: true,
         format: "image/png"
@@ -694,7 +694,7 @@ Ext.onReady(function () {
         visibility: false,
         displayInLayerSwitcher: true
     });
-    blowdown1950 = new OpenLayers.Layer.WMS("1950 Blowdown Map", "http://aprgis.org:8080/geoserver/wms", {
+    blowdown1950 = new OpenLayers.Layer.WMS("1950 Blowdown Map", "http://argis.org:8080/geoserver/wms", {
         layers: "argis:blowdown1950",
         transparent: true,
         format: "image/png"
@@ -705,7 +705,7 @@ Ext.onReady(function () {
         visibility: false,
         displayInLayerSwitcher: true
     });
-    landclass2001 = new OpenLayers.Layer.WMS("2001 Land Use and Development Plan Map (APA)", "http://aprgis.org:8080/geoserver/wms", {
+    landclass2001 = new OpenLayers.Layer.WMS("2001 Land Use and Development Plan Map (APA)", "http://argis.org:8080/geoserver/wms", {
         layers: "argis:landclass2001",
         transparent: true,
         format: "image/png"
@@ -716,7 +716,7 @@ Ext.onReady(function () {
         visibility: false,
         displayInLayerSwitcher: true
     });
-    leantos = new OpenLayers.Layer.WMS("Lean-Tos", "http://aprgis.org:8080/geoserver/wms", {
+    leantos = new OpenLayers.Layer.WMS("Lean-Tos", "http://argis.org:8080/geoserver/wms", {
         layers: "argis:leantos",
         transparent: true,
         format: "image/png"
@@ -890,7 +890,7 @@ Ext.onReady(function () {
                 extent: [-75.329, 43.039, -73.261, 44.877],
                 originator: "SUNY-ESF Adirondack Ecological Center",
                 updated: "2011-04-01",
-                metadata: "http://aprgis.org/argis/metadata/AdirondackLakes.html",
+                metadata: "http://argis.org/argis/metadata/AdirondackLakes.html",
                 abstract: "This layer was created by intersecting three datasets: 1) the Adirondack Park Agency Land Class & Development Plan Map where lccd=15 (water) 2) DEC Fisheries FIN Lakes, containing\
      Fisheries Identification Numbers and NHD Reachcodes, and 3) Adirondack Nature Conservancy lakes data containing the POND IDs used by the Adirondack Lakes Survey Corporation and The Adirondack Invasive Plan\
     ts Program (APIPP).",
@@ -1070,7 +1070,7 @@ Ext.onReady(function () {
             extent: [-75.327, 43.039, -73.281, 44.882],
             originator: "Applied GIS/Adirondack Park Agency",
             updated: "2000-01-01",
-            metadata: "http://aprgis.org/argis/metadata/ADK_1916_firemap.html",
+            metadata: "http://argis.org/argis/metadata/ADK_1916_firemap.html",
             abstract: "This coverage contains the 1916 fire protection areas of the Adirondack Park, New York State.  The data was created for the Adirondack Park Agency (APA) as an historical reference. This resource may be used to determine the recent history of land use in the Adirondack Park and major disturbances to the landscape. Such known and documented disturbances include a series of major forest fires that occurred at the turn of the 19th Century. Data is to be used at the scale intended (1:126720). Usage Notes: The hardcopy color map from which this digital data set was created is printed on paper adhered to a cloth/linen backing and attached on the top and bottom to long wooden sticks. The different land codes are color-coded and described in the legend. Supplemental Information: Digital data was developed by for the area defined by the Oswegatchie/Black River watershed in by SUNY Plattsburg in conduction with the APA.",
             queries: []
         },
@@ -1080,7 +1080,7 @@ Ext.onReady(function () {
             extent: [-75.933, 43.09, -73.476, 44.71],
             originator: "New York State Department of Environmental Conservation",
             updated: "2000-01-01",
-            metadata: "http://aprgis.org/argis/metadata/1950blowdown.html",
+            metadata: "http://argis.org/argis/metadata/1950blowdown.html",
             abstract: "This coverage contains areas damaged by a 1950 windstorm in and around the Adirondack Park, New York State.The data was created for the Adirondack Park Agency (APA) as an historical reference. This resource may be used to determine the recent history of land use and major disturbances in the Adirondack Park. The hardcopy map from which this digital data set was created is a creased paper blueprint developed by the New York State Conservation Department. According to the map, the areas of storm damage were determined from aerial reconnaissance data. The blueprint was drawn by the Forest General of the New York State Conservation Department, Gerald J. Rides. The scale bar indicates the map was drawn at a 1 inch = 4 miles scale. A legend appears at the bottom of the map with the following information:25-50% Blowdown 50-100% Blowdown County lines Adirondack blueline State land The 25-50% Blowdown category polygons are indicated by a pale dashed outline. These lines are very faint in some instances. A digital Arc/Info interchange file containing a nearly complete representation of the 1950 Blowdown map was created by the staff from the Center for Remote Sensing at SUNY Plattsburg. The polygons on the original map were copied on to a cartographically correct 1:250,000 NYS DOT base map, then digitized.",
             queries: []
         },
@@ -1233,7 +1233,7 @@ Ext.onReady(function () {
     }];
 
     selectCtrl = new OpenLayers.Control.WMSGetFeatureInfo({
-    	url: "http://aprgis.org:8080/geoserver/wms",
+    	url: "http://argis.org:8080/geoserver/wms",
     	title: 'Identify features by clicking',
     	layers: [citytown],
     	queryVisible: true,
@@ -1260,7 +1260,7 @@ Ext.onReady(function () {
     //selectCtrl.activate();
 
     infoCtrl = new OpenLayers.Control.WMSGetFeatureInfo({
-        url: "http://aprgis.org:8080/geoserver/wms",
+        url: "http://argis.org:8080/geoserver/wms",
         title: "Identify features by clicking",
         layers: [fishsurveylakes, aquaticinvasives, lakechem1984_1987, wetlands, streams, lakes, watershedshuc8, streamflow, landclass2012, citytown, terrestrialinvasives, slt, trailregisters, leantos],
         queryVisible: true,
@@ -1758,7 +1758,7 @@ Ext.onReady(function () {
         handler: function () {
             var a = window.open("", "printwindow");
             a.document.open("text/html");
-            a.document.write("<html><head><link rel='stylesheet' type='text/css' href='resources/OpenLayers-2.12.rc4/theme/default/style.css'><link rel='stylesheet' type='text/css' href='css/default.css'><style type='text/css'>.olControlPanPanel {display:none;} .olControlZoomPanel {display:none;}</style></head><body><div class='header'><p style='float:left; padding-left: 25px; padding-top: 1px;'><img style='width: 540px; height: 35px;' alt='Adirondack Regional GIS' src='img/logo3.gif' align='middle'></p></div><div style='clear: both;'></div><table border='0' width='"+mapPanel.map.getSize().w+"' height='"+mapPanel.map.getSize().h+"'><tr><td>"+ document.getElementById(mapDiv).innerHTML +"</td></tr></table><p>http://aprgis.org/argis/</body></html>");
+            a.document.write("<html><head><link rel='stylesheet' type='text/css' href='resources/OpenLayers-2.12.rc4/theme/default/style.css'><link rel='stylesheet' type='text/css' href='css/default.css'><style type='text/css'>.olControlPanPanel {display:none;} .olControlZoomPanel {display:none;}</style></head><body><div class='header'><p style='float:left; padding-left: 25px; padding-top: 1px;'><img style='width: 540px; height: 35px;' alt='Adirondack Regional GIS' src='img/logo3.gif' align='middle'></p></div><div style='clear: both;'></div><table border='0' width='"+mapPanel.map.getSize().w+"' height='"+mapPanel.map.getSize().h+"'><tr><td>"+ document.getElementById(mapDiv).innerHTML +"</td></tr></table><p>http://argis.org/argis/</body></html>");
             a.document.close();
             //a.print();
         }
@@ -2394,7 +2394,7 @@ Ext.onReady(function () {
         autoEl: {
             tag: "div",
             cls: "header",
-            html: '<a href="http://www.aprgis.org" target="_blank"><img style="width: 676px; height: 43px; position:absolute; left:30px; top:5px;" alt="Adirondack Regional GIS" src="img/logo3.gif" align="middle"></a><a href="http://bryanmcbride.com" target="_blank"><img style="width: 161px; height: 39px; position:absolute; right:50px; top:10px;" alt="Powered by OpenGeo Suite" src="img/pbOGSv-161x39.png" align="middle"></a>'
+            html: '<a href="http://www.argis.org" target="_blank"><img style="width: 676px; height: 43px; position:absolute; left:30px; top:5px;" alt="Adirondack Regional GIS" src="img/logo3.gif" align="middle"></a><a href="http://bryanmcbride.com" target="_blank"><img style="width: 161px; height: 39px; position:absolute; right:50px; top:10px;" alt="Powered by OpenGeo Suite" src="img/pbOGSv-161x39.png" align="middle"></a>'
         }
     });
     northPanel = new Ext.Panel({
@@ -2485,7 +2485,7 @@ Ext.onReady(function () {
         autoScroll: true,
         layout:"fit",
         border: false,
-        html: '<iframe id="downloads" name="downloads" src="http://aprgis.org/argis/config/dataportal.php" width="100%" height="100%" frameborder="0" scrolling="auto">/iframe>'
+        html: '<iframe id="downloads" name="downloads" src="http://argis.org/argis/config/dataportal.php" width="100%" height="100%" frameborder="0" scrolling="auto">/iframe>'
     });
 	var helpTab = new Ext.Panel({
         id: "help",
@@ -2495,7 +2495,7 @@ Ext.onReady(function () {
         autoScroll: true,
         layout:"fit",
         border: false,
-        html: '<iframe id="help" name="help" src="http://aprgis.org/argis/config/help.php" width="100%" height="100%" frameborder="0" scrolling="auto">/iframe>'
+        html: '<iframe id="help" name="help" src="http://argis.org/argis/config/help.php" width="100%" height="100%" frameborder="0" scrolling="auto">/iframe>'
     });
     var aboutTab = new Ext.Panel({
         id: "about",
@@ -2505,7 +2505,7 @@ Ext.onReady(function () {
         autoScroll: true,
         layout:"fit",
         border: false,
-        html: '<iframe id="about" name="about" src="http://aprgis.org/argis/config/about.php" width="100%" height="100%" frameborder="0" scrolling="auto">/iframe>'
+        html: '<iframe id="about" name="about" src="http://argis.org/argis/config/about.php" width="100%" height="100%" frameborder="0" scrolling="auto">/iframe>'
     });
     centerPanel = new Ext.TabPanel({
         region: "center",

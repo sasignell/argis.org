@@ -12,7 +12,7 @@
 		
 		if (!$result) {printf ("ERROR"); exit;}
 		
-		$myFile = "http://aprgis.org/argis/config/configTEST.js";
+		$myFile = "http://argis.org/argis/config/configTEST.js";
 		$fh = fopen($myFile, 'w') or die("can't open file");
 
 		$config = array();
